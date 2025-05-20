@@ -82,7 +82,7 @@ $(document).ready(function () {
 
 
           $target.css('transform', `translate(${finalX}px, ${finalY}px)`)
-          $target.css('filter', `brightness(${1-shadow}) contrast(1) blur(${shadow*4}px)`)
+          $target.css('filter', `brightness(${(1-shadow*2 < 0) ? 0 : 1-shadow*2}) contrast(1) blur(${(1-shadow*2 > 0) ? shadow * 4 : shadow * 10 * shadow }px)`)
         })
       }
 
