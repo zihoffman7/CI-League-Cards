@@ -1,0 +1,310 @@
+@font-face {
+  font-family: 'CocoGooseSemi';
+  src: url('public/fonts/CocoGooseSemi.ttf');
+}
+
+@font-face {
+  font-family: 'CocoGooseRegular';
+  src: url('public/fonts/CocoGooseRegular.ttf');
+}
+
+body {
+  margin: 0;
+  display: block;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.card {
+  width: 320px;
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(150, 220, 220, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 3px solid rgba(100, 100, 100, 0.25);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #000;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+  margin: auto;
+  margin-top: 10px;
+  vertical-align: middle;
+
+  display: inline-block;
+}
+
+.cardHeader > * {
+  text-align: center;
+  margin: auto;
+}
+.checkboxGrid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 5px 10px;
+  max-width: 420px;
+  margin: 5px auto;
+  font-family: sans-serif;
+}
+
+.checkboxGrid span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+#card {
+  display: flex;
+  width: 833px;
+  height: 612px;
+  border: 0px solid red;
+  box-sizing: border-box;
+  margin: 20px auto;
+  position: relative;
+  overflow-x: hidden;
+
+}
+
+#skinContainer {
+  margin-top: 118px;
+  margin-bottom: auto;
+  margin-left: -100px;
+  border: 0px;
+  width: 425px;
+  height: 425px;
+  z-index: 100;
+}
+
+
+
+.bgComponent {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#dbg {
+  z-index: 0;
+}
+
+#bg {
+  z-index: 10;
+}
+
+#pokeball {
+  z-index: 20;
+}
+
+#header, #subheader, #slots {
+  z-index: 30;
+}
+
+.cardContainer {
+  display: block;
+  text-align: center;
+}
+
+.cardContainer .card:not(#textForm, #selectionBox) {
+  width: 180px;
+  padding: 10px;
+}
+
+#aceWrapper {
+  width: 300px;
+  height: 300px;
+}
+
+#slot1 {
+  margin-left: 400px;
+  margin-top: 180px;
+}
+
+#slot2 {
+  margin-left: 550px;
+  margin-top: 215px;
+}
+
+#slot3 {
+  margin-left: 355px;
+  margin-top: 295px;
+}
+
+#slot4 {
+  margin-left: 510px;
+  margin-top: 330px;
+}
+
+#slot5 {
+  margin-left: 350px;
+  margin-top: 409px;
+}
+
+#slot6 {
+  margin-left: 510px;
+  margin-top: 440px;
+}
+
+.slot {
+  position: absolute;
+  width: 290px;
+  height: 70px;
+  z-index: 21;
+  /* background-color: green !important; */
+  clip-path: polygon(35% 0%, 100% 0%, 65% 100%, 0% 100%);
+}
+
+#ace {
+  height: 250px;
+  z-index: 21;
+  margin-top: 220px;
+  margin-left: 130px;
+}
+
+.pokemon:not(#ace) {
+  z-index: 22;
+}
+
+.slot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+#text1, #text2, #text3, #text4, #text5 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding: 0 4px;
+  z-index: 50;
+}
+
+#text1 {
+  width: 200px;
+  height: 65px;
+  margin-left: 115px;
+  margin-top: 50px;
+  font-family: 'CocoGooseRegular', Arial;
+  color: white;
+  font-size: 24px;
+}
+
+
+#text2 {
+  width: 380px;
+  height: 30px;
+  margin-left: 420px;
+  margin-top: 69px;
+  font-family: 'CocoGooseRegular', Arial;
+  color: white;
+  font-size: 28px;
+}
+
+#text3 {
+  width: 300px;
+  height: 48px;
+  margin-left: 505px;
+  margin-top: 119px;
+  font-family: 'CocoGooseRegular', Arial;
+  color: white;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+#text4 {
+  width: 240px;
+  height: 36px;
+  margin-left: 500px;
+  margin-top: 525px;
+  font-family: 'CocoGooseRegular', Arial;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+}
+
+#text5 {
+  width: 280px;
+  height: 28px;
+  margin-left: 480px;
+  margin-top: 555px;
+  font-family: 'CocoGooseSemi', Arial;
+  color: white;
+
+  font-size: 16px;
+  text-align: center;
+}
+
+
+.text {
+  display: inline-block;
+  line-height: 1.1;
+  word-break: break-word;
+  width: 100%;
+}
+
+/* input[type="number"], #pokemonForm input[type="text"] {
+  width: 40px;
+  padding: 2px 5px;
+  border-radius: 5px;
+  border: 2px solid black;
+} */
+
+input[name="dexnumber"] {
+  -webkit-appearance: none;
+  width: 100px;
+  background: #efefef;
+  border: 2px solid #aaccee;
+  border-radius: 8px;
+  height: 16px;
+  text-align: center;
+}
+
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100px;
+  height: 6px;
+  background: transparent;
+  cursor: pointer;
+  margin-right: 0px !important;
+  margin: 15px 0;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #77ccff;
+  border: 2px solid #66bbee;
+  border-radius: 50%;
+  margin-top: -6px;
+  transition: background .2s;
+}
+input[type=range]::-webkit-slider-thumb:hover {
+  background: #44aacc;
+}
