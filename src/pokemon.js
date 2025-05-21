@@ -78,7 +78,7 @@ $(document).ready(function () {
           }
 
           const finalX = centerX + offsetX
-          const finalY = centerY + offsetY
+          const finalY = centerY - offsetY
 
 
           $target.css('transform', `translate(${finalX}px, ${finalY}px)`)
