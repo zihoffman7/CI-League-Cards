@@ -17,7 +17,7 @@ $(document).ready(function () {
       let offsetX = parseInt($offsetXInput.val(), 10) || 0
       let offsetY = parseInt($offsetYInput.val(), 10) || 0
 
-      const imagePath = isShiny
+      let imagePath = isShiny
         ? `public/pokemon/shiny/${mon}.png`
         : `public/pokemon/regular/${mon}.png`
 
@@ -85,6 +85,12 @@ $(document).ready(function () {
           $target.css('filter', `brightness(${(1-shadow*2 < 0) ? 0 : 1-shadow*2}) contrast(1) blur(${(1-shadow*2 > 0) ? shadow * 4 : shadow * 12 * shadow }px)`)
         })
       }
+
+      img.onerror = function() {
+
+        imagePath = "public/pokemon/regular/0000.png";
+        img.onload();
+      };
 
 
 

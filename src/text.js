@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     const updateText = function () {
       const $parentCard = $(this).closest('.textfield')
-      const id = $parentCard.data('id') 
+      const id = $parentCard.data('id')
       const $target = $(`#${id} .text`)
 
       const text = $parentCard.find('input[name="text"]').val()
