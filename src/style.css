@@ -236,9 +236,9 @@ canvas {
 }
 
 #text4 {
-  width: 310px;
+  width: 260px;
   height: 36px;
-  margin-left: 470px;
+  margin-left: 500px;
   margin-top: 530px;
   font-family: 'Marseilazi', Arial;
   color: white;
@@ -247,9 +247,9 @@ canvas {
 }
 
 #text5 {
-  width: 280px;
+  width: 270px;
   height: 28px;
-  margin-left: 480px;
+  margin-left: 495px;
   margin-top: 555px;
   font-family: 'CocoGooseSemi', Arial;
   color: white;
@@ -314,4 +314,16 @@ input[type=range]::-webkit-slider-thumb {
 }
 input[type=range]::-webkit-slider-thumb:hover {
   background: #44aacc;
+}
+
+.nettoLogo {
+  z-index: 50;
+  height: auto;
+  width: 70px;
+  margin-left: 445px;
+  margin-top: 517px;
+}
+
+.nettoLogo:nth-of-type(1) {
+  margin-left: 750px;
 }
