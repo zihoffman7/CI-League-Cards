@@ -87,7 +87,6 @@ $(document).ready(function () {
       }
 
       img.onerror = function() {
-
         imagePath = "public/pokemon/regular/0000.png";
         img.onload();
       };
