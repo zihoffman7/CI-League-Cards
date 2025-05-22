@@ -18,6 +18,10 @@ $(document).ready(function () {
         adjustFontSize($('#text5 .text'), "16px")
       }
 
+      if (id === "text2") {
+        adjustFontSize($('#text2 .text'), "26px")
+      }
+
     }
 
     $card.find('input[name="text"]').on('input change', updateText)
