@@ -64,5 +64,4 @@ container.addEventListener("skinRender", function (e) {
 
 setTimeout(() => {
   window.dispatchEvent(new Event('resize'));
-
 }, 2000);
