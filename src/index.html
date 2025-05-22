@@ -10,13 +10,6 @@
   <body>
     <div class="cardContainer">
       <div id="selectionBox" class="card">
-        <div class="cardHeader">
-          <div>
-            <label for="nameInput">Username</label>
-              <input type="text" id="nameInput" placeholder="Username" value="ztard7">
-          </div>
-        </div>
-
 
         <div class="checkboxGrid">
           <span><input type="checkbox" class="partToggle" id="hat" checked><label for="hat">Hat</label></span>
@@ -26,11 +19,16 @@
           <span><input type="checkbox" class="partToggle" id="leftTrousers" checked><label for="leftTrousers">Left Trousers</label></span>
           <span><input type="checkbox" class="partToggle" id="rightTrousers" checked><label for="rightTrousers">Right Trousers</label></span>
         </div>
-        <div style="text-align: center"><input type="checkbox" id="animate"><label for="animate">Pause Animation</label></div>
 
       </div>
       <form id="textForm" class="card">
         <div class="checkboxGrid">
+          <div>
+            <div>
+              <label for="nameInput">Username</label>
+                <input type="text" id="nameInput" placeholder="Username" value="ztard7">
+            </div>
+          </div>
           <div class="textfield" data-id="text1">
             <label>
               Position
@@ -54,19 +52,29 @@
 
           <div class="textfield" data-id="text4">
             <label>
-              Username
+              Display Name
               <input type="text" name="text" value="ztard">
             </label><br>
           </div>
 
           <div class="textfield" data-id="text5">
             <label>
-              Nickname/catchphrase
+              Catchphrase
               <input type="text" name="text" value="aka Regirock">
             </label><br>
           </div>
         </div>
       </form>
+
+      <div  class="card">
+        <form id="poseForm"class="checkboxGrid">
+          <span><input type="radio" name="pose" class="poseToggle" id="walk" checked><label for="walk">Walking</label></span>
+          <span><input type="radio" name="pose" class="poseToggle" id="leon"><label for="leon">Leon</label></span>
+          <span><input type="radio" name="pose" class="poseToggle" id="dab"><label for="dab">Dab</label></span>
+        </form>
+
+        <div style="text-align: center"><input type="checkbox" id="animate"><label for="animate">Stop Animation</label></div>
+      </div>
     </div>
 
     <div class="cardContainer">

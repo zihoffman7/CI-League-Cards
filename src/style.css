@@ -1,11 +1,16 @@
 @font-face {
+  font-family: 'CocoGooseRegular';
+  src: url('public/fonts/CocoGooseRegular.ttf');
+}
+
+@font-face {
   font-family: 'CocoGooseSemi';
   src: url('public/fonts/CocoGooseSemi.ttf');
 }
 
 @font-face {
-  font-family: 'CocoGooseRegular';
-  src: url('public/fonts/CocoGooseRegular.ttf');
+  font-family: 'Marseilazi';
+  src: url('public/fonts/Marseilazi.otf');
 }
 
 body {
@@ -231,11 +236,11 @@ canvas {
 }
 
 #text4 {
-  width: 240px;
+  width: 310px;
   height: 36px;
-  margin-left: 500px;
-  margin-top: 525px;
-  font-family: 'CocoGooseRegular', Arial;
+  margin-left: 470px;
+  margin-top: 530px;
+  font-family: 'Marseilazi', Arial;
   color: white;
   font-size: 26px;
   text-align: center;
@@ -257,8 +262,10 @@ canvas {
 .text {
   display: inline-block;
   line-height: 1.1;
-  word-break: break-word;
+  overflow: hidden;
   width: 100%;
+  box-sizing: border-box;
+  text-overflow: ellipsis;
 }
 
 /* input[type="number"], #pokemonForm input[type="text"] {
